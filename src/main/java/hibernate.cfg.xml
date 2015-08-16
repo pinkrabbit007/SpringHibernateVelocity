@@ -41,7 +41,7 @@
 		   
         <!-- 映射文件 -->
         <mapping resource="shiyanlou/test/hibernate/entity/User.hbm.xml"/>
-	<!-- 	<mapping resource="shiyanlou/test/hibernate/entity/Group.hbm.xml"/> -->
+		<mapping resource="shiyanlou/test/hibernate/entity/LicPlate.hbm.xml"/>
     </session-factory>
 
 </hibernate-configuration>

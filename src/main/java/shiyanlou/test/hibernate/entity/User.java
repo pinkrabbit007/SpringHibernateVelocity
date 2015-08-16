@@ -3,8 +3,6 @@ package shiyanlou.test.hibernate.entity;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import shiyanlou.test.hibernate.controller.HomeController;
-
 public class User {
 
     private int id;

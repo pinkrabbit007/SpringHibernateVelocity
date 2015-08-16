@@ -1,8 +1,6 @@
 package shiyanlou.test.hibernate.service;
  
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 
 import org.hibernate.Criteria;
 import org.hibernate.Query;
@@ -15,8 +13,7 @@ import org.hibernate.criterion.Restrictions;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import shiyanlou.test.hibernate.controller.HomeController;
-import shiyanlou.test.hibernate.entity.Group;
+import shiyanlou.test.hibernate.entity.LicencePlate;
 import shiyanlou.test.hibernate.entity.User;
 
 public class UserService {
@@ -41,7 +38,10 @@ public class UserService {
 		user.setGranted("0");
 		// 保存对象
 		session.save(user);
-		
+		LicencePlate licencePlate = new LicencePlate();
+		//licencePlate.setUsername(user.getUsername()); 
+		licencePlate.setLicencePlateNum("浙A88888");
+		session.save(licencePlate);
 		// 提交事务
 		session.getTransaction().commit();
 		
@@ -370,7 +370,7 @@ public class UserService {
         sf.close();
 	}
 
-	public void onetoall(){
+	/*public void onetoall(){
 		Configuration cfg = new Configuration().configure();
         SessionFactory sf = cfg.buildSessionFactory();
         Session session = sf.openSession();
@@ -405,4 +405,4 @@ public class UserService {
         session.close();
         sf.close();
 	}
-}
+*/}
