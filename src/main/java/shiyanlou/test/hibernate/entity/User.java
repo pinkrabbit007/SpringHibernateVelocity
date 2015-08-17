@@ -1,5 +1,7 @@
 package shiyanlou.test.hibernate.entity;
 
+import java.util.Set;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -13,7 +15,14 @@ public class User {
     private String IDcard;
 
 	private String granted;
+	private Set<LicencePlate> licencePlate;
 	
+	public Set<LicencePlate> getLicencePlate() {
+		return licencePlate;
+	}
+	public void setLicencePlate(Set<LicencePlate> licencePlate) {
+		this.licencePlate = licencePlate;
+	}
 	private static final Logger logger = LoggerFactory.getLogger(User.class);
     
     public String getGranted() {

@@ -20,9 +20,11 @@
 		<property name="IDcard" column="IDcard"></property>
 		<property name="granted" column="granted"></property>
 
-		<set name="LicencePlate" cascade="save-update,delete">
-			<key column="username"></key>
+ 		<set name="licencePlate" cascade="all">
+			<key column="id"></key>
 			<one-to-many class="shiyanlou.test.hibernate.entity.LicencePlate" />
-		</set>
+		</set> 
+		
+		
 	</class>
 </hibernate-mapping>
