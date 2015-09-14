@@ -15,8 +15,8 @@ http://www.springframework.org/schema/context http://www.springframework.org/sch
 	
 	<context:component-scan base-package="shiyanlou.test.hibernate.controller" />
 	<mvc:annotation-driven></mvc:annotation-driven>
-	<mvc:default-servlet-handler />
-	<mvc:resources location="/WEB-INF/resource/image/" mapping="/image/**"/>  
+<!-- 	<mvc:default-servlet-handler />
+	<mvc:resources location="/WEB-INF/resource/image/" mapping="/image/**"/> -->  
 	
  		<bean id="velocityConfig"
 		class="org.springframework.web.servlet.view.velocity.VelocityConfigurer">

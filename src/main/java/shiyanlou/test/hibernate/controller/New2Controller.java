@@ -5,16 +5,16 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 /**
- * @date 2015-09-13
+ * @date 2015-09-14
  * @author 你们最帅的张俊俏师兄
  *
  */
 
 @Controller
-@RequestMapping("progress.do")
-public class ProgressController {
+@RequestMapping("news2.do")
+public class New2Controller {
 	@RequestMapping(method = { RequestMethod.POST, RequestMethod.GET })
 	public String login2() {
-		return "progress";
+		return "news2";
 	}
 }
