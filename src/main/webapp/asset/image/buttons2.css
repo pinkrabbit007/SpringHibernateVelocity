@@ -85,22 +85,22 @@ body {
  background-color: #e67b9c;
 }
 .nav li:nth-child(1):hover ac {
- color: #b12a55;
+ color: #b12a55;  
  text-shadow: 0 1px 0 #ff95b7;
  border-color: #ba335c;
- background-color: #ea5180;
+ background-color: #CD5C5C;   /*  改动了颜色byzjq */
 }
 .nav li:nth-child(2):hover ac {
  color: #2883a2;
  text-shadow: 0 1px 0 #9cdef2;
  border-color: #4397b3;
- background-color: #55c1e5;
+ background-color: #55c1e5;    
 }
 .nav li:nth-child(3):hover ac {
  color: #ab8228;
  text-shadow: 0 1px 0 #ffe199;
  border-color: #b08f3e;
- background-color: #f8c64d;
+ background-color: #FFD700;   /*  改动了颜色byzjq */
 }
 .nav li:nth-child(4):hover ac {
  color: #2883a2;
@@ -112,7 +112,7 @@ body {
  color: #b12a55;
  text-shadow: 0 1px 0 #ff95b7;
  border-color: #ba335c;
- background-color: #ea5180;
+ background-color: #CD5C5C;   /*  改动了颜色byzjq */
 }
 .nav span {
  display: block;
