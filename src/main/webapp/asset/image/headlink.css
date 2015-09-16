@@ -1,32 +1,39 @@
-a.headlink:link { 
-color:white; 
-text-decoration:none; 
-} 
-a.headlink:visited { 
-color:white; 
-text-decoration:none; 
-} 
-a.headlink:hover { 
-color:white; 
-text-decoration:none;
-} 
-a.headlink,td.news:active { 
-color:#FFFFFF; 
-text-decoration:none; 
-} 
-a.name,a.news:link { 
-color:black; 
-text-decoration:none; 
-} 
-a.name,a.news:visited { 
-color:black; 
-text-decoration:none; 
-} 
-a.name,a.news:hover { 
-color:blue; 
-text-decoration:none;
-} 
-a.name,a.news:active { 
-color:black; 
-text-decoration:none; 
-} 
+a.headlink {
+	display: block;
+	padding: 15px 0;
+	background: #B22222;
+	border-radius: 5px;
+	color: white;
+	text-decoration: none;
+}
+
+a.headlink:hover {
+	background: #CD2626; color : white;
+	text-decoration: none;
+	color: white;
+}
+
+a.headlink,td.news:active {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+a.name,a.news:link {
+	color: black;
+	text-decoration: none;
+}
+
+a.name,a.news:visited {
+	color: black;
+	text-decoration: none;
+}
+
+a.name,a.news:hover {
+	color: blue;
+	text-decoration: none;
+}
+
+a.name,a.news:active {
+	color: black;
+	text-decoration: none;
+}
