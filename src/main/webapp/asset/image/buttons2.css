@@ -91,10 +91,10 @@ body {
  background-color: #ea5180;
 }
 .nav li:nth-child(2):hover ac {
- color: #5e9eb4;
- text-shadow: 0 1px 0 #adddec;
- border-color: #a2cfde;
- background-color: #7ec9e3;
+ color: #2883a2;
+ text-shadow: 0 1px 0 #9cdef2;
+ border-color: #4397b3;
+ background-color: #55c1e5;
 }
 .nav li:nth-child(3):hover ac {
  color: #ab8228;
@@ -103,10 +103,10 @@ body {
  background-color: #f8c64d;
 }
 .nav li:nth-child(4):hover ac {
- color: #5e9eb4;
- text-shadow: 0 1px 0 #adddec;
- border-color: #a2cfde;
- background-color: #7ec9e3;
+ color: #2883a2;
+ text-shadow: 0 1px 0 #9cdef2;
+ border-color: #4397b3;
+ background-color: #55c1e5;
 }
 .nav li:nth-child(5):hover ac {
  color: #b12a55;
