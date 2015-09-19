@@ -15,6 +15,9 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class HomeController { 
 	@RequestMapping(method = { RequestMethod.POST, RequestMethod.GET })
 	public String login2() {
+		
+		EmailCheck.sendmail();
+		
 		return "home";
 	}
 }
