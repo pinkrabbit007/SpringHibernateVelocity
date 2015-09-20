@@ -1,23 +1,30 @@
-package shiyanlou.test.hibernate.controller;
+package shiyanlou.test.hibernate.util;
 
 import java.util.Properties;
+
+import javax.mail.Folder;
+import javax.mail.Message;
+import javax.mail.MessagingException;
+import javax.mail.Session;
+import javax.mail.Store;
+import javax.mail.URLName;
+import javax.mail.internet.MimeMessage;
 
 import org.springframework.mail.MailMessage;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.JavaMailSenderImpl;
 
-
 /**
  * 
  * @author zjq
  * @aim 实现java发送邮件，
  * @date 2015-9-19
- *
+ * 
  */
-public class EmailCheck {
+public class SendOneEmail {
 
-	public static void sendmail() {
+	public static void sendMail() {
 
 		// 创建邮件发送类 JavaMailSender
 		// 用于发送基本的文本邮件信息（不能包括附件，及图片）
@@ -41,11 +48,8 @@ public class EmailCheck {
 		((JavaMailSenderImpl) sender).setJavaMailProperties(pro);
 
 		System.out.println("在email函数里了");
-		
-		 
-		
-		
-       //创建基本邮件信息
+
+		// 创建基本邮件信息
 		MailMessage mailMessage = new SimpleMailMessage();
 
 		// 发送者地址，必须填写正确的邮件格式，否者会发送失败
@@ -63,4 +67,5 @@ public class EmailCheck {
 
 	}
 
+	
 }

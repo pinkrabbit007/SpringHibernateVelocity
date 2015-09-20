@@ -1,8 +1,12 @@
 package shiyanlou.test.hibernate.controller;
 
+import javax.mail.MessagingException;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+
+import shiyanlou.test.hibernate.util.ReciveOneMail;
 
 /**
  * @date 2015-09-13
@@ -15,9 +19,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class HomeController { 
 	@RequestMapping(method = { RequestMethod.POST, RequestMethod.GET })
 	public String login2() {
-		
-		EmailCheck.sendmail();
-		
 		return "home";
 	}
 }
