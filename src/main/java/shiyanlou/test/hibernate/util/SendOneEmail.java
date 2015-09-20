@@ -55,9 +55,9 @@ public class SendOneEmail {
 		// 发送者地址，必须填写正确的邮件格式，否者会发送失败
 		mailMessage.setFrom("justme@zju.edu.cn");
 		// 邮件主题
-		mailMessage.setSubject("测试邮件byjava2015-09-19-16:22");
+		mailMessage.setSubject("测试q1能否发邮件");
 		// 邮件内容，简单的邮件信息只能添加文本信息
-		mailMessage.setText("测试");
+		mailMessage.setText("测试q1能否发邮件");
 		// 邮件接收者的邮箱地址
 		mailMessage.setTo("350024806@qq.com");
 

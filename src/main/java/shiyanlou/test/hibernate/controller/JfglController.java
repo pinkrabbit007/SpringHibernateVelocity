@@ -25,9 +25,16 @@ public class JfglController {
 		String temperature = null;
 		try {
 			temperature = ReciveOneMail.findTopmailTemper();
+			System.out.println(temperature.substring(0,1).equalsIgnoreCase("0"));
+			//问题来了，假如temperature是字符串0，为什么这里temperature.substring(0,1).equals("0")是false？
+			if(temperature.equals("0.00"))
+			{
+				temperature = "(⊙o⊙)…机房温度传感器挂了";
+				System.out.println("(⊙o⊙)…机房温度传感器挂了");
+			}
 		} catch (MessagingException e) {
 			System.out.println("Cannot connect to email-system");
-			temperature = "Cannot connect to email-system";
+			temperature = "Cannot connect to email-system "+e.toString();
 			e.printStackTrace();
 		}
 		mav.addObject("lab429temperature",temperature);

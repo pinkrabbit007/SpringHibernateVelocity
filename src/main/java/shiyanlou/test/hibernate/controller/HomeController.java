@@ -1,12 +1,10 @@
 package shiyanlou.test.hibernate.controller;
 
-import javax.mail.MessagingException;
-
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import shiyanlou.test.hibernate.util.ReciveOneMail;
+import shiyanlou.test.hibernate.util.SendOneEmail;
 
 /**
  * @date 2015-09-13
