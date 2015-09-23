@@ -20,7 +20,7 @@ import javax.mail.internet.MimeUtility;
  */
 
 public class ReciveOneMail {
-	private MimeMessage mimeMessage = null; 
+	private MimeMessage mimeMessage = null;
 
 	public ReciveOneMail(MimeMessage mimeMessage) {
 		this.mimeMessage = mimeMessage;
@@ -44,7 +44,7 @@ public class ReciveOneMail {
 		return subject;
 	}
 
-	public  static String findTopmailTemper() throws MessagingException {
+	public static String findTopmailTemper() throws MessagingException {
 
 		Properties props = System.getProperties();
 		props.put("mail.smtp.host", "smtp.zju.edu.cn");
@@ -64,7 +64,7 @@ public class ReciveOneMail {
 		pmm = new ReciveOneMail((MimeMessage) message[0]);
 		System.out.println("Message " + " subject: " + pmm.getSubject());
 		String emailTitle = pmm.getSubject();
-		System.out.println(emailTitle.substring(11,15));
-		return emailTitle.substring(11,15).toString();
+		System.out.println(emailTitle.substring(11, 15));
+		return emailTitle.substring(11, 15).toString();
 	}
 }
