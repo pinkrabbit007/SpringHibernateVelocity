@@ -1,4 +1,4 @@
-﻿function moveElement(elementID,final_x,final_y,interval) {
+function moveElement(elementID,final_x,final_y,interval) {
   if (!document.getElementById) return false;
   if (!document.getElementById(elementID)) return false;
   var elem = document.getElementById(elementID);
@@ -6,7 +6,7 @@
     clearTimeout(elem.movement);
   }
   if (!elem.style.left) {
-    elem.style.left = "150px";
+    elem.style.left = "450px";
   }
   if (!elem.style.top) {
     elem.style.top = "900px";
@@ -37,11 +37,11 @@
   var repeat = "moveElement('"+elementID+"',"+final_x+","+final_y+","+interval+")";
   elem.movement = setTimeout(repeat,interval);
 }
-function ballon2(){
-	document.getElementById("img2").style.visibility="visible";
-  var elem = document.getElementById("img2");
+function ballon4(){
+	document.getElementById("img4").style.visibility="visible";
+  var elem = document.getElementById("img4");
   elem.style.position = "fixed";
-  elem.style.left = "150px";
-  elem.style.top = "1000px";
-  moveElement("img2",150,-300,20);
+  elem.style.left = "450px";
+  elem.style.top = "1050px";
+  moveElement("img4",450,-300,20);
 }

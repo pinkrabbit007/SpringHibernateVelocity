@@ -6,7 +6,7 @@
     clearTimeout(elem3.movement);
   }
   if (!elem3.style.left) {
-    elem3.style.left = "100px";
+    elem3.style.left = "300px";
   }
   if (!elem3.style.top) {
     elem3.style.top = "900px";
@@ -41,7 +41,7 @@ function ballon3(){
 	document.getElementById("img3").style.visibility="visible";
   var elem3 = document.getElementById("img3");
   elem3.style.position = "fixed";
-  elem3.style.left = "100px";
-  elem3.style.top = "900px";
-  moveElement("img3",100,-250,20);
+  elem3.style.left = "300px";
+  elem3.style.top = "800px";
+  moveElement("img3",300,-300,20);
 }
