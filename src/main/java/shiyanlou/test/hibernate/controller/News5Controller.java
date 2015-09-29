@@ -5,16 +5,16 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 /**
- * @date 2015-09-22
- * @author 你们第二个帅的张博
+ * @date 2015-09-23
+ * @author 你们的大师兄连夜在加班哦
  * 
  */
 
 @Controller
-@RequestMapping("news4.do")
-public class News4 {
+@RequestMapping("news5.do")
+public class News5Controller {
 	@RequestMapping(method = { RequestMethod.POST, RequestMethod.GET })
 	public String login2() {
-		return "news4";
+		return "news5";
 	}
 }
