@@ -1,5 +1,7 @@
 package shiyanlou.test.hibernate.controller;
 
+import java.util.Vector;
+
 import javax.mail.MessagingException;
 
 import org.springframework.stereotype.Controller;
@@ -38,6 +40,37 @@ public class JfglController {
 			e.printStackTrace();
 		}
 		mav.addObject("lab429temperature", temperature);
+		
+		/**
+		 * 获取过去24小时的温度
+		 */
+		
+		Vector<String> result = null;
+		try {
+			result = ReciveOneMail.find24hoursTemper();
+			for (int i = 0; i < result.size(); i++) {
+				System.out.print(" " + result.get(i));
+			}
+
+		} catch (MessagingException e) {
+			System.out.println("We do not have 144 emails !!");
+		}
+		mav.addObject("last24hoursT", result);
+		
+		/**
+		 * 获取过去一周的温度
+		 */		 
+		Vector<String> resultofweek = null;
+		try {
+			resultofweek = ReciveOneMail.findLastWeekT();
+			for (int i = 0; i < resultofweek.size(); i++) {
+				System.out.print(" " + resultofweek.get(i));
+			}
+
+		} catch (MessagingException e) {
+			System.out.println("We do not have 144 emails !!");
+		} 
+		mav.addObject("lastWeekT", resultofweek);
 		return mav;
 	}
 }

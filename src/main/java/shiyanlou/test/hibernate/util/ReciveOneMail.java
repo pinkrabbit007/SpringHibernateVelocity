@@ -1,6 +1,7 @@
 package shiyanlou.test.hibernate.util;
 
 import java.util.Properties;
+import java.util.Vector;
 
 import javax.mail.Folder;
 import javax.mail.Message;
@@ -66,5 +67,65 @@ public class ReciveOneMail {
 		String emailTitle = pmm.getSubject();
 		System.out.println(emailTitle.substring(11, 15));
 		return emailTitle.substring(11, 15).toString();
+	}
+
+	public static Vector<String> find24hoursTemper() throws MessagingException {
+		Vector<String> result = new Vector<String>();
+		Properties props = System.getProperties();
+		props.put("mail.smtp.host", "smtp.zju.edu.cn");
+		props.put("mail.smtp.auth", "true");
+		Session session = Session.getDefaultInstance(props, null);
+		URLName urln = new URLName("pop3", "pop3.zju.edu.cn", 110, null,
+				"justme", "280050");
+		Store store = session.getStore(urln);
+		store.connect();
+		Folder folder = store.getFolder("INBOX");
+		folder.open(Folder.READ_ONLY);
+		Message message[] = folder.getMessages();
+		System.out.println("Messages's length: " + message.length);
+		ReciveOneMail pmm = null;
+
+		for (int i = 0; i < message.length; i = i + 6) {
+			// 由于是10分钟取一个点，那么每个小时之间有6个点。我们取24小时，就有144个点。
+			if (i > 143) 
+				break;
+			pmm = new ReciveOneMail((MimeMessage) message[i]);
+			String emailTitle = pmm.getSubject();
+			// System.out.println("Message " + " subject: " + pmm.getSubject()
+			// );
+			// System.out.println(emailTitle.substring(11, 15));
+			String tempresult = emailTitle.substring(11, 15);
+			result.addElement(tempresult);
+
+		}
+		return result;
+	}
+	
+	public static Vector<String> findLastWeekT() throws MessagingException {
+		Vector<String> result = new Vector<String>();
+		Properties props = System.getProperties();
+		props.put("mail.smtp.host", "smtp.zju.edu.cn");
+		props.put("mail.smtp.auth", "true");
+		Session session = Session.getDefaultInstance(props, null);
+		URLName urln = new URLName("pop3", "pop3.zju.edu.cn", 110, null,
+				"justme", "280050");
+		Store store = session.getStore(urln);
+		store.connect();
+		Folder folder = store.getFolder("INBOX");
+		folder.open(Folder.READ_ONLY);
+		Message message[] = folder.getMessages();
+		System.out.println("Messages's length: " + message.length);
+		ReciveOneMail pmm = null;
+
+		for (int i = 0; i < message.length; i = i + 144) {
+			// 一天144个点，一周1008个点
+			if (i > 1007) 
+				break;
+			pmm = new ReciveOneMail((MimeMessage) message[i]);
+			String emailTitle = pmm.getSubject(); 
+			String tempresult = emailTitle.substring(11, 15);
+			result.addElement(tempresult); 
+		}
+		return result;
 	}
 }
