@@ -2,6 +2,18 @@
 <html>
 <title>王琦课题组</title>
 <head>
+<script type="text/javascript" src="asset/image/tiaofu/ballon.js"></script>
+<script type="text/javascript" src="asset/image/tiaofu/ballon2.js"></script>
+<script type="text/javascript" src="asset/image/tiaofu/tiaofu.js"></script>
+<img id="img1"
+	style="Z-INDEX: 100; position: fixed; visibility: hidden; left: 0px; top: 900px;"
+	src="asset/image/tiaofu/ballon1.jpg">
+<img id="img2"
+	style="Z-INDEX: 100; position: fixed; visibility: hidden; left: 1050px; top: 900px;"
+	src="asset/image/tiaofu/ballon2.jpg">
+<img id="tiaofu"
+	style="Z-INDEX: 100; position: fixed; visibility: hidden; left: 0px; top: 900px;width:100%"
+	src="asset/image/tiaofu/tiaofu.gif">
 <table align="center" name="table1" bgcolor="#8B3A3A" width="100%"
 	border="0">
 	<tr name="table1.1" height="65">
@@ -29,8 +41,9 @@
 		<td><a class="headlink" href="activities.do"> 课题组活动 </a></td>
 	</tr>
 </table>
+
 </head>
-<body>
+<body onload="ballon1();ballon2();tiaofu()">
 	<table width=80% align=center>
 		<tr height=20>
 			<td>
@@ -154,5 +167,7 @@
 		</tr>
 
 	</table>
+
+
 </footer>
 </html>
