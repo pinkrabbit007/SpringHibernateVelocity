@@ -56,7 +56,20 @@ public class JfglController {
 			System.out.println("We do not have 144 emails !!");
 		}
 		mav.addObject("last24hoursT", result);
-
+		
+		mav.addObject("last24hoursT_0", result.get(0));mav.addObject("last24hoursT_1", result.get(1));
+		mav.addObject("last24hoursT_2", result.get(2));mav.addObject("last24hoursT_3", result.get(3));
+		mav.addObject("last24hoursT_4", result.get(4));mav.addObject("last24hoursT_5", result.get(5));
+		mav.addObject("last24hoursT_6", result.get(6));mav.addObject("last24hoursT_7", result.get(7));
+		mav.addObject("last24hoursT_8", result.get(8));mav.addObject("last24hoursT_9", result.get(9));
+		mav.addObject("last24hoursT_10", result.get(10));mav.addObject("last24hoursT_11", result.get(11));
+		mav.addObject("last24hoursT_12", result.get(12));mav.addObject("last24hoursT_13", result.get(13));
+		mav.addObject("last24hoursT_14", result.get(14));mav.addObject("last24hoursT_15", result.get(15));
+		mav.addObject("last24hoursT_16", result.get(16));mav.addObject("last24hoursT_17", result.get(17));
+		mav.addObject("last24hoursT_18", result.get(18));mav.addObject("last24hoursT_19", result.get(19));
+		mav.addObject("last24hoursT_20", result.get(20));mav.addObject("last24hoursT_21", result.get(21));
+		mav.addObject("last24hoursT_22", result.get(22));mav.addObject("last24hoursT_23", result.get(23)); 
+		
 		/**
 		 * 获取过去一周的温度
 		 */
@@ -71,8 +84,13 @@ public class JfglController {
 			System.out.println("We do not have 144 emails !!");
 		}
 		mav.addObject("lastWeekT", resultofweek);
+		
+		mav.addObject("lastWeekT_0", resultofweek.get(0));mav.addObject("lastWeekT_1", resultofweek.get(1));
+		mav.addObject("lastWeekT_2", resultofweek.get(2));mav.addObject("lastWeekT_3", resultofweek.get(3));
+		mav.addObject("lastWeekT_4", resultofweek.get(4));mav.addObject("lastWeekT_5", resultofweek.get(5));
+		mav.addObject("lastWeekT_6", resultofweek.get(6)); 
+		
 		return mav;
-
-
 	}
+	 
 }
