@@ -15,6 +15,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class Act2007 {
 	@RequestMapping(method = { RequestMethod.POST, RequestMethod.GET })
 	public String login2() {
-		return "act2007";
+		return "act/act2007";
 }
 }

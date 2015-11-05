@@ -4,17 +4,19 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+import shiyanlou.test.hibernate.util.SendOneEmail;
+
 /**
- * @date 2015-09-17
- * @author 你们第二个帅的张博
- * 
+ * @date 2015-09-13
+ * @author 你们最帅的张俊俏师兄
+ *
  */
 
 @Controller
-@RequestMapping("act2011.do")
-public class Act2011 {
+@RequestMapping("news1.do")
+public class News1 { 
 	@RequestMapping(method = { RequestMethod.POST, RequestMethod.GET })
 	public String login2() {
-		return "act/act2011";
+		return "news1";
 	}
 }
