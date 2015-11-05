@@ -1,4 +1,4 @@
-package shiyanlou.test.hibernate.controller;
+package shiyanlou.test.hibernate.actphoto;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

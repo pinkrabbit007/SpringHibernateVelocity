@@ -1,19 +1,20 @@
-package shiyanlou.test.hibernate.controller;
+package shiyanlou.test.hibernate.news;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+
 /**
- * @date 2015-09-17
- * @author 你们第二个帅的张博
- * 
+ * @date 2015-11-05
+ * @author zb
+ * @content 
  */
 
 @Controller
-@RequestMapping("act2006.do")
-public class Act2006 {
+@RequestMapping("news_6.do")
+public class News_6 {
 	@RequestMapping(method = { RequestMethod.POST, RequestMethod.GET })
 	public String login2() {
-		return "act/act2006";
+		return "news/news_6";
 	}
 }
