@@ -55,7 +55,7 @@ public class ReciveOneMail {
 		props.put("mail.smtp.auth", "true");
 		Session session = Session.getDefaultInstance(props, null);
 		URLName urln = new URLName("pop3", "pop3.zju.edu.cn", 110, null,
-				"justme", "280050");
+				"justme", "asdf280050");
 		Store store = session.getStore(urln);
 		store.connect();
 		Folder folder = store.getFolder("INBOX");
@@ -92,7 +92,7 @@ public class ReciveOneMail {
 		props.put("mail.smtp.auth", "true");
 		Session session = Session.getDefaultInstance(props, null);
 		URLName urln = new URLName("pop3", "pop3.zju.edu.cn", 110, null,
-				"justme", "280050");
+				"justme", "asdf280050");
 		Store store = session.getStore(urln);
 		store.connect();
 		Folder folder = store.getFolder("INBOX");
@@ -120,7 +120,7 @@ public class ReciveOneMail {
 		props.put("mail.smtp.auth", "true");
 		Session session = Session.getDefaultInstance(props, null);
 		URLName urln = new URLName("pop3", "pop3.zju.edu.cn", 110, null,
-				"justme", "280050");
+				"justme", "asdf280050");
 		Store store = session.getStore(urln);
 		store.connect();
 		Folder folder = store.getFolder("INBOX");

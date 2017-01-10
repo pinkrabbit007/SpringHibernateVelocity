@@ -35,7 +35,7 @@ public class SendOneEmail {
 		// 发送者邮箱的用户名
 		((JavaMailSenderImpl) sender).setUsername("justme");
 		// 发送者邮箱的密码
-		((JavaMailSenderImpl) sender).setPassword("280050");
+		((JavaMailSenderImpl) sender).setPassword("asdf280050");
 
 		// 配置文件，用于实例化java.mail.session
 		Properties pro = System.getProperties();
