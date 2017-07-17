@@ -85,7 +85,7 @@ public class ReciveOneMail {
 		return emailTitle.substring(11, 15).toString();
 	}
 
-	public static Vector<String> find24hoursTemper() throws MessagingException {
+/**	public static Vector<String> find24hoursTemper() throws MessagingException {
 		Vector<String> result = new Vector<String>();
 		Properties props = System.getProperties();
 		props.put("mail.smtp.host", "smtp.zju.edu.cn");
@@ -140,4 +140,5 @@ public class ReciveOneMail {
 		}
 		return result;
 	}
+	*/
 }
