@@ -44,7 +44,7 @@ public class JfglController {
 		/**
 		 * 获取过去24小时的温度
 		 */
-/**
+
 		Vector<String> primaryresult = null;
 		Vector<Float> result = new Vector<Float>();
 		try {
@@ -86,7 +86,7 @@ public class JfglController {
 		mav.addObject("last24hoursT_21", result.get(21));
 		mav.addObject("last24hoursT_22", result.get(22));
 		mav.addObject("last24hoursT_23", result.get(23));
-*/
+		
 		/**
 		 * 获取过去一周的温度
 		*/
