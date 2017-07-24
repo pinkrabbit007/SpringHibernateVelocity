@@ -90,7 +90,7 @@ public class JfglController {
 		/**
 		 * 获取过去一周的温度
 		*/
-/**		Vector<String> resultofweek = null;
+		Vector<String> resultofweek = null;
 		try {
 			resultofweek = ReciveOneMail.findLastWeekT();
 			for (int i = 0; i < resultofweek.size(); i++) {
@@ -109,7 +109,6 @@ public class JfglController {
 		mav.addObject("lastWeekT_4", resultofweek.get(4));
 		mav.addObject("lastWeekT_5", resultofweek.get(5));
 		mav.addObject("lastWeekT_6", resultofweek.get(6));
-		*/
 		return mav;
 	}
 }
